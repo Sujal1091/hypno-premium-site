@@ -3,6 +3,7 @@
     import ScrollReveal from "../components/ScrollReveal";
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     import { faPhone } from "@fortawesome/free-solid-svg-icons";
+    import logo from '../assets/logo_2-removebg.png';
 
 
     export default function Home() {
@@ -14,7 +15,7 @@
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
             <Link to="/" className="flex items-center gap-4 group">
             <img
-                src="./src/assets/logo_2-removebg.png"
+                src={logo}
                 alt="Sheshi Kiran Logo"
                 className="h-16 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
             />
