@@ -317,7 +317,12 @@
             ✉ contact@sheshikiran.com
         </p>
         <p className="text-gray-400 text-sm">
-            Hyderabad & Bangalore
+                PLOT NO 119
+                NAVYA CHANDRA HOMES
+                Uppal Bhagayath
+                Hyderabad
+                Medchal Malkajgiri
+                Telangana - 50003
         </p>
         </div>
 
