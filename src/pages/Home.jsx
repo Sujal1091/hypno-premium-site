@@ -3,6 +3,7 @@
     import ScrollReveal from "../components/ScrollReveal";
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     import { faPhone } from "@fortawesome/free-solid-svg-icons";
+    import {logo_2-removebg} from "../assets/logo_2-removebg.png";
 
 
     export default function Home() {
