@@ -14,7 +14,7 @@
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="text-4xl tracking-widest"
+            className="text-4xl text-[#c6a86b] tracking-widest"
             >
             SHESHI KIRAN
             </motion.h1>

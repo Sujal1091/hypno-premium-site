@@ -1,6 +1,8 @@
     import { motion } from "framer-motion";
-    import { Links } from "react-router-dom";
+    import { Link } from "react-router-dom";
     import ScrollReveal from "../components/ScrollReveal";
+    import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+    import { faPhone } from "@fortawesome/free-solid-svg-icons";
 
 
     export default function Home() {
@@ -8,32 +10,48 @@
         <div className="bg-[#07090d] text-white overflow-hidden">
 
         {/* ================= NAVBAR ================= */}
-        <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
+        <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.6)]">
             <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-            <h1 className="text-xl tracking-widest font-semibold">
-                SHESHI KIRAN
-            </h1>
+            <Link to="/" className="flex items-center gap-4 group">
+            <img
+                src="/src/assets/logo_2-removebg.png"
+                alt="Sheshi Kiran Logo"
+                className="h-16 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
+            />
+            <span className="text-2xl font-bold text-white tracking-wide drop-shadow-[0_0_8px_rgba(198,168,107,0.3)]">Sheshi Kiran Cheruku</span>
+            </Link>
 
-            <div className="hidden md:flex gap-8 text-sm text-gray-300">
-                <a href="./Home" className="hover:text-white">Home</a>
-                <a href="./about" className="hover:text-white">About</a>
-                <a href="./program" className="hover:text-white">Program</a>
-                <a href="./pricing" className="hover:text-white">Pricing</a>
-                <a href="./contact" className="hover:text-white">Contact</a>
-            </div>
+                <div className="hidden md:flex gap-8 text-sm text-gray-300">
+                <Link to="/" className="hover:text-[#e6d3a3] hover:drop-shadow-[0_0_6px_rgba(198,168,107,0.8)] transition">
+                    Home
+                </Link>
+                <Link to="/about" className="hover:text-[#e6d3a3] hover:drop-shadow-[0_0_6px_rgba(198,168,107,0.8)] transition">
+                    About
+                </Link>
+                <Link to="/program" className="hover:text-[#e6d3a3] hover:drop-shadow-[0_0_6px_rgba(198,168,107,0.8)] transition">
+                    Services
+                </Link>
+                <Link to="/pricing" className="hover:text-[#e6d3a3] hover:drop-shadow-[0_0_6px_rgba(198,168,107,0.8)] transition">
+                    Pricing
+                </Link>
+                <Link to="/contact" className="hover:text-[#e6d3a3] hover:drop-shadow-[0_0_6px_rgba(198,168,107,0.8)] transition">
+                    Contact
+                </Link>
+                </div>
 
             <a
                 href="https://wa.me/918519833399"
                 target="_blank"
-                className="bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-5 py-2 rounded-full font-semibold hover:scale-105 transition"
+                className="relative bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-4 py-2 rounded-full font-semibold text-sm transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(198,168,107,0.8)] active:scale-95 flex items-center gap-2"
             >
+                <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
                 Book Call
             </a>
             </div>
         </nav>
 
         {/* ================= HERO ================= */}
-        <section className="min-h-screen flex items-center justify-center px-6 pt-24">
+        <section className="min-h-screen flex items-center justify-center px-6 pt-32">
 
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
@@ -43,9 +61,9 @@
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
-                {/* <p className="text-[#c6a86b] tracking-widest mb-4 text-sm">
-                FOR SENIOR MANAGERS & CXOs IN IT
-                </p> */}
+                <p className="text-[#c6a86b] tracking-widest mb-4 text-sm">
+                For Senior Managers & CXOs in IT | Hyderabad & Bangalore
+                </p>
 
                 <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
                 You Built a Career That <br />
@@ -53,20 +71,20 @@
                 </h1>
 
                 <h2 className="text-3xl md:text-4xl text-[#c6a86b] mb-6 font-light">
-                Now Reclaim the Energy to Lead It.
+                It's Time to Reclaim the Energy to Lead It.
                 </h2>
 
                 <p className="text-gray-300 text-lg mb-8">
-                In just 60 days, rewire your subconscious for clarity,
-                focus and peak performance — without burnout or endless therapy.
+                In just 60 days, rewire your mind for clarity, focus, and peak performance without talk therapy, burnout spirals, or sacrificing what matters most.
                 </p>
 
                 <div className="flex gap-4 flex-wrap">
                 <a
                     href="https://wa.me/918519833399"
                     target="_blank"
-                    className="bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition"
+                    className="relative bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-6 py-4 rounded-full font-semibold text-lg transition duration-300 hover:scale-105 hover:shadow-[0_0_25px_rgba(198,168,107,0.8)] active:scale-95 flex items-center gap-2"
                 >
+                    <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
                     Book Free Clarity Call
                 </a>
 
@@ -76,8 +94,7 @@
                 </div>
 
                 <p className="text-gray-400 mt-6 text-sm">
-                Already helped 100+ senior leaders reclaim 2–3 hours of
-                productivity daily.
+                Already helped 100+ senior leaders in India's top IT companies reclaim 2–3 hours of focused productivity daily.
                 </p>
             </motion.div>
 
@@ -105,14 +122,26 @@
         {/* ================= PROBLEM SECTION ================= */}
         <section className="py-28 px-6 bg-black">
             <div className="max-w-5xl mx-auto text-center">
-            <h2 className="text-4xl mb-10">Sound Familiar?</h2>
+            <h2 className="text-4xl mb-10  text-[#e6d3a3] drop-shadow-[0_0_10px_rgba(198,168,107,0.9)]">Sound Familiar?</h2>
 
             <p className="text-gray-300 text-lg leading-relaxed">
-                You've built success. Delivered results. Earned respect.  
-                But somewhere along the way, the cost became too high.
+                You've climbed the corporate ladder. You've built teams, delivered results, and earned your seat at the table. But somewhere along the way, the cost of success quietly became too high.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-6 mt-12 text-left">
+            <motion.div
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={{
+                        hidden: {},
+                        visible: {
+                        transition: {
+                            staggerChildren: 0.2,
+                        },
+                        },
+                    }}
+                    className="grid md:grid-cols-2 gap-6 mt-12 text-left"
+                >
                 {[
                 "Waking up exhausted even after 7+ hours sleep",
                 "Mind constantly running through meetings & deadlines",
@@ -121,11 +150,19 @@
                 "Avoiding difficult conversations",
                 "Feeling slowly burned out despite success",
                 ].map((item, i) => (
-                <div key={i} className="bg-white/5 border border-white/10 p-6 rounded-xl">
+                    <motion.div
+                    key={i}
+                    variants={{
+                        hidden: { opacity: 0, y: 60 },
+                        visible: { opacity: 1, y: 0 },
+                    }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    className="bg-white/5 border border-white/10 p-6 rounded-xl hover:border-[#c6a86b] hover:shadow-[0_0_25px_rgba(198,168,107,0.4)] transition duration-300"
+                    >
                     {item}
-                </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
             </div>
         </section>
 </ScrollReveal>
@@ -148,7 +185,7 @@
             <a
                 href="https://wa.me/918519833399"
                 target="_blank"
-                className="bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-8 py-4 rounded-full font-semibold text-lg hover:scale-105 transition"
+                className="relative inline-flex items-center gap-2 bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-6 py-4 rounded-full font-semibold text-lg transition duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(198,168,107,0.8)] active:scale-95"
             >
                 Explore THRIVE Program
             </a>
@@ -187,13 +224,13 @@
             </h2>
 
             <p className="text-gray-300 mb-8">
-            Book a free clarity call and discover if THRIVE is right for you.
+            Book a free 30-minute Clarity Call with Sheshi. No pressure, no pitch just a focused conversation about where you are, where you want to be, and whether the THRIVE program is the right fit for you.
             </p>
 
             <a
             href="https://wa.me/918519833399"
             target="_blank"
-            className="bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-10 py-5 rounded-full font-semibold text-lg hover:scale-105 transition"
+            className="relative inline-flex items-center gap-2 bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-6 py-4 rounded-full font-semibold text-lg transition duration-300 hover:scale-105 hover:-translate-y-1 hover:shadow-[0_0_25px_rgba(198,168,107,0.8)] active:scale-95"
             >
             Claim Your Free Clarity Call
             </a>
