@@ -6,9 +6,11 @@ import About from "./pages/About";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
 import Program from "./pages/Program";
+import Layout from "./components/Layout";
+import PrivacyPolicy from "./pages/privacy-policy";
 
 function App() {
-   const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 2500);
@@ -20,11 +22,15 @@ function App() {
 
       <BrowserRouter>
         <Routes>
+          <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/program" element={<Program />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<PrivacyPolicy />} />
+          </Route>
         </Routes>
       </BrowserRouter>
     </>

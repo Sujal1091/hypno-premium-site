@@ -3,8 +3,8 @@
     import { useState } from "react";
     import ScrollReveal from "../components/ScrollReveal";
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-    import { faPhone } from "@fortawesome/free-solid-svg-icons";
-    import logo from '../assets/logo_2-removebg.png';
+    import { faPhone, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+    
 
 
     export default function Home() {
@@ -13,77 +13,6 @@
     return (
         <div className="bg-[#07090d] text-white overflow-hidden">
 
-        {/* ================= NAVBAR ================= */}
-            <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-                
-                {/* Logo */}
-                <Link to="/" className="flex items-center gap-4 group">
-                <img
-                    src={logo}
-                    alt="Sheshi Kiran Logo"
-                    className="h-16 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
-                />
-                <span className="text-2xl font-bold text-white tracking-wide">
-                    Sheshi Kiran Cheruku
-                </span>
-                </Link>
-
-                {/* Desktop Navigation */}
-                <div className="hidden md:flex gap-8 text-sm text-gray-300">
-                <Link to="/" className="hover:text-[#e6d3a3] transition">Home</Link>
-                <Link to="/about" className="hover:text-[#e6d3a3] transition">About</Link>
-                <Link to="/program" className="hover:text-[#e6d3a3] transition">Services</Link>
-                <Link to="/pricing" className="hover:text-[#e6d3a3] transition">Pricing</Link>
-                <Link to="/contact" className="hover:text-[#e6d3a3] transition">Contact</Link>
-                </div>
-
-                {/* Right Section */}
-                <div className="flex items-center gap-4">
-                
-                {/* Desktop Book Call */}
-                <a
-                    href="https://wa.me/918519833399"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hidden md:flex bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-4 py-2 rounded-full font-semibold text-sm transition duration-300 hover:scale-105 active:scale-95 items-center gap-2"
-                >
-                    <FontAwesomeIcon icon={faPhone} className="w-4 h-4" />
-                    Book Call
-                </a>
-
-                {/* Mobile Hamburger */}
-                <button
-                    className="md:hidden text-white text-2xl"
-                    onClick={() => setMenuOpen(!menuOpen)}
-                >
-                    ☰
-                </button>
-                </div>
-            </div>
-
-            {/* Mobile Dropdown Menu */}
-            {menuOpen && (
-                <div className="md:hidden bg-black/95 backdrop-blur-lg px-6 py-6 space-y-4 text-gray-300">
-                <Link to="/" onClick={() => setMenuOpen(false)} className="block hover:text-[#e6d3a3]">Home</Link>
-                <Link to="/about" onClick={() => setMenuOpen(false)} className="block hover:text-[#e6d3a3]">About</Link>
-                <Link to="/program" onClick={() => setMenuOpen(false)} className="block hover:text-[#e6d3a3]">Services</Link>
-                <Link to="/pricing" onClick={() => setMenuOpen(false)} className="block hover:text-[#e6d3a3]">Pricing</Link>
-                <Link to="/contact" onClick={() => setMenuOpen(false)} className="block hover:text-[#e6d3a3]">Contact</Link>
-
-                {/* Mobile Book Call */}
-                <a
-                    href="https://wa.me/918519833399"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex justify-center bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-4 py-2 rounded-full font-semibold text-sm mt-4"
-                >
-                    <FontAwesomeIcon icon={faPhone} className="w-4 h-4 mr-2" />
-                    Book Call
-                </a>
-                </div>
-            )}
-            </nav>
 
         {/* ================= HERO ================= */}
         <section className="min-h-screen flex items-center justify-center px-6 pt-32">
@@ -135,8 +64,8 @@
 
             {/* RIGHT VISUAL */}
             <motion.div
-                initial={{ opacity: 0, scale: .9 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 60 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 className="relative"
             >
@@ -153,6 +82,8 @@
 
             </div>
         </section>
+
+
 <ScrollReveal>
         {/* ================= PROBLEM SECTION ================= */}
         <section className="py-28 px-6 bg-black">
@@ -270,82 +201,6 @@
             Claim Your Free Clarity Call
             </a>
         </section>
-
-        {/* ================= FOOTER ================= */}
-    <footer className="bg-black border-t border-white/10 px-6 py-16">
-    <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-10">
-
-        {/* BRAND */}
-        <div>
-        <h2 className="text-2xl font-semibold tracking-widest mb-4">
-            SHESHI KIRAN
-        </h2>
-        <p className="text-gray-400 text-sm leading-relaxed">
-            Professional Hypnotherapist & Executive Performance Coach
-            helping senior IT leaders eliminate burnout and perform at
-            peak mental clarity.
-        </p>
-        </div>
-
-        {/* QUICK LINKS */}
-        <div>
-        <h3 className="mb-4 text-lg">Quick Links</h3>
-        <ul className="space-y-2 text-gray-400">
-            <li className="hover:text-white cursor-pointer">Home</li>
-            <li className="hover:text-white cursor-pointer">About</li>
-            <li className="hover:text-white cursor-pointer">THRIVE Program</li>
-            <li className="hover:text-white cursor-pointer">Pricing</li>
-            <li className="hover:text-white cursor-pointer">Contact</li>
-        </ul>
-        </div>
-
-            <div>
-        <h3 className="mb-4 text-lg">Quick Links</h3>
-        <ul className="space-y-2 text-gray-400">
-            <li className="hover:text-white cursor-pointer">Privacy Policy</li>
-            <li className="hover:text-white cursor-pointer">Terms of Service</li>
-        </ul>
-        </div>
-
-        {/* CONTACT */}
-        <div>
-        <h3 className="mb-4 text-lg">Contact</h3>
-        <p className="text-gray-400 text-sm mb-2">
-            📞 +91 8519833399
-        </p>
-        <p className="text-gray-400 text-sm mb-2">
-            ✉ contact@sheshikiran.com
-        </p>
-        <p className="text-gray-400 text-sm">
-                PLOT NO 119
-                NAVYA CHANDRA HOMES
-                Uppal Bhagayath
-                Hyderabad
-                Medchal Malkajgiri
-                Telangana - 50003
-        </p>
-        </div>
-
-        {/* CTA
-        <div>
-        <h3 className="mb-4 text-lg">Start Your Transformation</h3>
-        <a
-            href="https://wa.me/918519833399"
-            target="_blank"
-            className="inline-block bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
-        >
-            Book Free Clarity Call
-        </a>
-        </div> */}
-
-    </div>
-
-    {/* BOTTOM */}
-    <div className="text-center text-gray-500 text-sm mt-12 border-t border-white/10 pt-6">
-        © {new Date().getFullYear()} Sheshi Kiran Cheruku. All rights reserved.
-    </div>
-    </footer>
-
 
         </div>
     );

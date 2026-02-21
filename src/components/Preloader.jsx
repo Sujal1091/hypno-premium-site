@@ -13,7 +13,7 @@
             <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             className="text-4xl text-[#c6a86b] tracking-widest"
             >
             SHESHI KIRAN
