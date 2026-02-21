@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Program from "./pages/Program";
 import Layout from "./components/Layout";
 import PrivacyPolicy from "./pages/privacy-policy";
+import TermsOfService from "./pages/Terms-of-service";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -29,7 +30,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/program" element={<Program />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-of-service" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           </Route>
         </Routes>
       </BrowserRouter>

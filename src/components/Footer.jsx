@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import PrivacyPolicy from "../pages/privacy-policy";
+
 
 export default function Footer() {
     return (
@@ -24,7 +24,7 @@ export default function Footer() {
         <div>
         <h3 className="text-xl text-[#c6a86b] mb-4">Quick Links</h3>
         <ul className="space-y-2 text-gray-400">
-           <li><Link to="/" className="hover:text-[#c6a86b] transition">Home</Link></li>
+            <li><Link to="/" className="hover:text-[#c6a86b] transition">Home</Link></li>
             <li><Link to="/about" className="hover:text-[#c6a86b] transition">About</Link></li>
             <li><Link to="/program" className="hover:text-[#c6a86b] transition">THRIVE Program</Link></li>
             <li><Link to="/pricing" className="hover:text-[#c6a86b] transition">Pricing</Link></li>
@@ -36,8 +36,6 @@ export default function Footer() {
         <h3 className="text-xl text-[#c6a86b] mb-4">Legal</h3>
         <ul className="space-y-2 text-gray-400">
             <li><Link to="/privacy-policy" className="hover:text-[#c6a86b] transition">Privacy Policy</Link></li>
-            <li><Link to="/refund-policy" className="hover:text-[#c6a86b] transition">Refund Policy</Link></li>
-            <li><Link to="/disclaimer" className="hover:text-[#c6a86b] transition">Disclaimer</Link></li>
             <li><Link to="/terms-of-service" className="hover:text-[#c6a86b] transition">Terms of Service</Link></li>
         </ul>
         </div>
