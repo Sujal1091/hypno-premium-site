@@ -1,6 +1,6 @@
     import { motion } from "framer-motion";
     import ScrollReveal from "../components/ScrollReveal";
-    import blueSuit from "../assets/blue-suit.jpeg";
+    import blueSuit from "../assets/Blue-Suit.jpeg";
     import greensuitwithchair from "../assets/greensuitwithchair.jpeg";
     import greensuit from "../assets/greensuit.jpeg";
     import certificate1 from "../assets/certificate1.jpeg";
