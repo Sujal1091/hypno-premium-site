@@ -1,7 +1,7 @@
     import { motion } from "framer-motion";
     import { useState } from "react";
     import ScrollReveal from "../components/ScrollReveal";
-    import blueSuit from "../assets/blue-suit.jpeg";
+    import blueSuit from "../assets/Blue-Suit.jpeg";
     import cert1 from "../assets/certificate1.jpeg";
     import cert2 from "../assets/certificate(goldplate).jpeg";
 
