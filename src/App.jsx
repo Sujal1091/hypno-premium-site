@@ -19,7 +19,7 @@ function App() {
 
     const handleLoad = () => {
       const elapsed = Date.now() - startTime;
-      const minimumTime = 1700;
+      const minimumTime = 1800;
 
       const remaining = minimumTime - elapsed;
 
