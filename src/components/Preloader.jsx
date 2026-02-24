@@ -16,7 +16,7 @@
             transition={{ duration: 1 }}
             className="text-4xl text-[#c6a86b] tracking-widest"
             >
-            SHESHI KIRAN
+            Mindsupport Hypnosis & Counseling
             </motion.h1>
 
             <motion.div
