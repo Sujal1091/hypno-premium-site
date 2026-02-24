@@ -1,4 +1,5 @@
     import { motion } from "framer-motion";
+    import ScrollReveal from "../components/ScrollReveal";
 
     export default function Program() {
     return (
@@ -30,6 +31,7 @@
 
 
         {/* SECTION 2 — OUTCOMES */}
+        <ScrollReveal>
         <section className="py-28 px-6 bg-black">
             <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-light mb-12 text-center">
@@ -46,9 +48,10 @@
             </ul>
             </div>
         </section>
+        </ScrollReveal>
 
 
-
+<ScrollReveal>
         {/* SECTION 3 — 3 PHASE JOURNEY */}
         <section className="py-28 px-6">
             <div className="max-w-6xl mx-auto">
@@ -110,10 +113,11 @@
             </div>
             </div>
         </section>
-
+</ScrollReveal>
 
 
         {/* SECTION 4 — WHAT'S INCLUDED */}
+        
         <section className="py-28 px-6 bg-black">
             <div className="max-w-6xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-light mb-12 text-center">
@@ -162,6 +166,7 @@
 
 
         {/* SECTION 5 — COMPARISON */}
+        <ScrollReveal>
         <section className="py-28 px-6">
             <div className="max-w-6xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-light mb-16">
@@ -193,7 +198,7 @@
             </div>
             </div>
         </section>
-
+</ScrollReveal>
 
 
         {/* SECTION 6 — CTA */}

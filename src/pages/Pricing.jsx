@@ -1,4 +1,5 @@
     import { motion } from "framer-motion";
+    import seminarImage from "../assets/seminar.jpeg";   // import this image
     export default function Pricing() {
     return (
         <div className="pt-32">
@@ -77,14 +78,17 @@
 
 
 
-        {/* SECTION 3 — WHAT'S INCLUDED */}
+{/* SECTION 3 — WHAT'S INCLUDED */}
         <section className="py-24 px-6">
-            <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-light mb-12 text-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+
+            {/* LEFT CONTENT */}
+            <div>
+            <h2 className="text-3xl md:text-4xl font-light mb-12">
                 What's Included
             </h2>
 
-            <ul className="space-y-4 text-gray-300 text-lg">
+            <ul className="space-y-5 text-gray-300 text-lg">
                 <li>✔ 3 Offline Group Sessions + 6 Online Group Sessions</li>
                 <li>✔ 2 Individual Offline Sessions + 3 Individual Online Sessions</li>
                 <li>✔ 1 Personalised Pathway Creation Call</li>
@@ -96,6 +100,21 @@
                 </li>
             </ul>
             </div>
+
+            {/* RIGHT IMAGE */}
+            <div className="relative rounded-3xl transition duration-700 hover:scale-105">
+            <img
+                src={seminarImage}   // import this
+                alt="Leadership Seminar Session"
+                className="rounded-3xl shadow-[0_0_50px_rgba(198,168,107,0.25)] 
+                border border-white/10 object-cover w-full h-[450px]"
+            />
+
+            {/* Optional subtle glow overlay */}
+            <div className="absolute inset-0 rounded-3xl bg-gradient-to-t from-black/40 to-transparent"></div>
+            </div>
+
+        </div>
         </section>
 
 

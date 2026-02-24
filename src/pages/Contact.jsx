@@ -1,6 +1,6 @@
     import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
     import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
-    import { faInstagram, faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+    import { faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
     import { motion } from "framer-motion";
 
     export default function Contact() {
@@ -102,17 +102,17 @@
                     </a>
 
                     {/* PHONE */}
-                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" className="hover:border-[#c6a86b] hover:-translate-y-1 transition duration-300 block">
+                    <a href="https://wa.me/+918519833399" target="_blank" className="hover:border-[#c6a86b] hover:-translate-y-1 transition duration-300 block">
                     <div className="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md hover:border-[#c6a86b] transition duration-300">
                         <FontAwesomeIcon icon={faPhone} className="text-3xl text-[#c6a86b] mb-4" />
                         <h3 className="text-lg mb-2">Phone / WhatsApp</h3>
-                        <p className="text-gray-400">+91 XXXXXXXXXX</p>
+                        <p className="text-gray-400">+91 85198 33399</p>
                     </div>
                     </a>
 
                     {/* INSTAGRAM */}
                             <a
-                            href="https://instagram.com/YourHandle"
+                            href="https://www.instagram.com/raise_of_sheshis?igsh=MXEzMTZid28zeWxhZg=="
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md 
@@ -121,21 +121,21 @@
                             >
                             <FontAwesomeIcon icon={faInstagram} className="text-3xl text-[#c6a86b] mb-4" />
                             <h3 className="text-lg mb-2">Instagram</h3>
-                            <p className="text-gray-400">@YourHandle</p>
+                            <p className="text-gray-400">@raise_of_sheshis</p>
                             </a>
 
                     {/* LINKEDIN */}
                         <a
-                        href="https://linkedin.com/in/YourProfile"
+                        href="https://youtube.com/@mindsupport.hypnosis?si=_TUdbnkY1O6rNrAT"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md 
                                     hover:border-[#c6a86b] hover:-translate-y-1 
                                     transition duration-300 block"
                         >
-                        <FontAwesomeIcon icon={faLinkedin} className="text-3xl text-[#c6a86b] mb-4" />
-                        <h3 className="text-lg mb-2">LinkedIn</h3>
-                        <p className="text-gray-400">linkedin.com/in/YourProfile</p>
+                        <FontAwesomeIcon icon={faYoutube} className="text-3xl text-[#c6a86b] mb-4" />
+                        <h3 className="text-lg mb-2">Youtube</h3>
+                        <p className="text-gray-400">youtube.com/@mindsupport.hypnosis</p>
                         </a>
 
                     </div>
