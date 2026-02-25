@@ -12,13 +12,13 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-4">
 
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2 min-w-0 flex-shrink">
+                <Link to="/" className="flex items-center gap-2 min-w-0 flex-1 md:flex-none">
                     <img
                         src={logo}
                         alt="Sheshi Kiran Logo"
                         className="h-10 md:h-16 flex-shrink-0 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
                     />
-                    <span className="text-sm md:text-2xl font-bold text-white tracking-wide leading-tight line-clamp-2 max-w-[160px] md:max-w-none">
+                    <span className="text-sm md:text-2xl font-bold text-white tracking-wide leading-tight line-clamp-2">
                         MindSupport Hypnosis & Counselling™️
                     </span>
                 </Link>
@@ -34,7 +34,6 @@ export default function Navbar() {
 
                 {/* Right Section */}
                 <div className="flex items-center gap-4 flex-shrink-0">
-
                     {/* Desktop Book Call */}
                     <a
                         href="https://wa.me/918519833399"
