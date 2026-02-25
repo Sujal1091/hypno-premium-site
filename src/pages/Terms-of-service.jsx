@@ -113,7 +113,7 @@ export default function TermsOfService() {
                         <h2 className="text-lg font-medium text-white mb-3">
                             8. Contact Information
                         </h2>
-                        <p>Email: sheshikiran.cheruku@gmail.comsheshikiran.com</p>
+                        <p>Email: sheshikiran.cheruku@gmail.com</p>
                         <p>Location: Hyderabad, Telangana, India</p>
                     </div>
 
