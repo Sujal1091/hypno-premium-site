@@ -9,7 +9,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-4">
+            <div className="w-full md:max-w-7xl md:mx-auto flex justify-between items-center px-4 md:px-6 py-4">
 
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2 min-w-0 flex-1 md:flex-none">
