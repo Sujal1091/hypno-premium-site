@@ -154,11 +154,11 @@ export default function Contact() {
                     <div className="grid md:grid-cols-2 gap-8">
 
                         {/* EMAIL */}
-                        <a href="mailto:your@email.com" className=" hover:border-[#c6a86b] hover:-translate-y-1 transition duration-300 block">
+                        <a href="mailto:sheshikiran.cheruku@gmail.com" className=" hover:border-[#c6a86b] hover:-translate-y-1 transition duration-300 block">
                             <div className="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-md hover:border-[#c6a86b] transition duration-300">
                                 <FontAwesomeIcon icon={faEnvelope} className="text-3xl text-[#c6a86b] mb-4" />
                                 <h3 className="text-lg mb-2">Email</h3>
-                                <p className="text-gray-400">your@email.com</p>
+                                <p className="text-gray-400">sheshikiran.cheruku@gmail.com</p>
                             </div>
                         </a>
 
@@ -221,7 +221,7 @@ export default function Contact() {
                     </p>
 
                     <p className="text-gray-400">
-                        You can also email directly at your@email.com for any questions
+                        You can also email directly at sheshikiran.cheruku@gmail.com for any questions
                         before booking a call.
                     </p>
 

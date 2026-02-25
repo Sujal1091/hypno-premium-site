@@ -126,7 +126,7 @@ export default function PrivacyPolicy() {
                         <h2 className="text-lg font-medium text-white mb-3">
                             9. Contact Information
                         </h2>
-                        <p>Email: contact@sheshikiran.com</p>
+                        <p>Email: sheshikiran.cheruku@gmail.comsheshikiran.com</p>
                         <p>Location: Hyderabad, Telangana, India</p>
                     </div>
 

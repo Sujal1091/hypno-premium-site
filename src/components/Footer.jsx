@@ -48,7 +48,7 @@ export default function Footer() {
                         📞 +91 8519833399
                     </p>
                     <p className="text-gray-400 text-sm mb-2">
-                        ✉ contact@sheshikiran.com
+                        ✉ sheshikiran.cheruku@gmail.com
                     </p>
                     <p className="text-gray-400 text-sm">
                         <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
