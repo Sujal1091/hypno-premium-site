@@ -66,7 +66,7 @@ export default function Home() {
                         </p>
                     </motion.div>
 
-                    {/* RIGHT IMAGE */}
+                   {/* RIGHT IMAGE */}
                     <motion.div
                         initial="hidden"
                         animate="visible"
@@ -75,6 +75,7 @@ export default function Home() {
                             visible: { opacity: 1, y: 0 },
                         }}
                         transition={{ duration: 0.8 }}
+                        className="relative overflow-hidden" 
                     >
                         {/* Gold Glow Background */}
                         <div className="absolute w-[420px] h-[420px] bg-[#c6a86b]/20 blur-[140px] rounded-full"></div>
@@ -83,8 +84,8 @@ export default function Home() {
                             src={blueSuit}
                             alt="Sheshi Kiran"
                             className="relative rounded-3xl border border-white/10 
-                shadow-[0_0_60px_rgba(198,168,107,0.35)] 
-                hover:scale-105 transition duration-700"
+                            shadow-[0_0_60px_rgba(198,168,107,0.35)] 
+                            hover:scale-105 transition duration-700"
                         />
                     </motion.div>
                 </div>
