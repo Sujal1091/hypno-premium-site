@@ -12,15 +12,15 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-4">
 
                 {/* Logo */}
-            <Link to="/" className="flex items-center gap-3 min-w-0">
-                <img
-                    src={logo}
-                    alt="Sheshi Kiran Logo"
-                    className="h-12 md:h-16 flex-shrink-0 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
-                />
-                <span className="text-base md:text-2xl font-bold text-white tracking-wide leading-tight break-words">
-                    MindSupport Hypnosis & Counselling™️
-                </span>
+                <Link to="/" className="flex items-center gap-2 min-w-0 flex-shrink">
+                    <img
+                        src={logo}
+                        alt="Sheshi Kiran Logo"
+                        className="h-10 md:h-16 flex-shrink-0 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
+                    />
+                    <span className="text-sm md:text-2xl font-bold text-white tracking-wide leading-tight line-clamp-2 max-w-[160px] md:max-w-none">
+                        MindSupport Hypnosis & Counselling™️
+                    </span>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -33,7 +33,7 @@ export default function Navbar() {
                 </div>
 
                 {/* Right Section */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 flex-shrink-0">
 
                     {/* Desktop Book Call */}
                     <a
@@ -48,7 +48,7 @@ export default function Navbar() {
 
                     {/* Mobile Hamburger */}
                     <button
-                        className="md:hidden text-white text-2xl"
+                        className="md:hidden text-white text-2xl flex-shrink-0"
                         onClick={() => setMenuOpen(!menuOpen)}
                     >
                         ☰
