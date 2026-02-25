@@ -9,18 +9,18 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.6)]">
-            <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+            <div className="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-4">
 
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-4 group">
-                    <img
-                        src={logo}
-                        alt="Sheshi Kiran Logo"
-                        className="h-16 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
-                    />
-                    <span className="text-2xl font-bold text-white tracking-wide">
-                        MindSupport Hypnosis & Counselling™️
-                    </span>
+            <Link to="/" className="flex items-center gap-3 min-w-0">
+                <img
+                    src={logo}
+                    alt="Sheshi Kiran Logo"
+                    className="h-12 md:h-16 flex-shrink-0 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
+                />
+                <span className="text-base md:text-2xl font-bold text-white tracking-wide leading-tight break-words">
+                    MindSupport Hypnosis & Counselling™️
+                </span>
                 </Link>
 
                 {/* Desktop Navigation */}
