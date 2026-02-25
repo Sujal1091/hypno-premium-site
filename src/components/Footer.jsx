@@ -11,7 +11,7 @@ export default function Footer() {
                 {/* BRAND */}
                 <div>
                     <h2 className="text-2xl font-semibold tracking-widest text-[#c6a86b] mb-4">
-                        SHESHI KIRAN
+                        MindSupport Hypnosis & Counselling™️
                     </h2>
                     <p className="text-gray-400 text-sm leading-relaxed">
                         Professional Hypnotherapist & Executive Performance Coach
@@ -52,27 +52,17 @@ export default function Footer() {
                     </p>
                     <p className="text-gray-400 text-sm">
                         <FontAwesomeIcon icon={faLocationDot} className="mr-2" />
-                        PLOT NO 119, NAVYA CHANDRA HOMES, Uppal Bhagayath, Hyderabad, Medchal Malkajgiri, Telangana - 50003
+                        PLOT NO 119, NAVYA CHANDRA HOMES, Uppal Bhagayath, Hyderabad, Medchal Malkajgiri, Telangana - 500039
                     </p>
                 </div>
 
-                {/* CTA
-        <div>
-        <h3 className="mb-4 text-lg">Start Your Transformation</h3>
-        <a
-            href="https://wa.me/918519833399"
-            target="_blank"
-            className="inline-block bg-gradient-to-r from-[#c6a86b] to-[#e6d3a3] text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition"
-        >
-            Book Free Clarity Call
-        </a>
-        </div> */}
+
 
             </div>
 
             {/* BOTTOM */}
             <div className="text-center text-gray-500 text-sm mt-12 border-t border-white/10 pt-6">
-                © {new Date().getFullYear()} Mindsupport Hypnosis & Counseling. All rights reserved.
+                © {new Date().getFullYear()} MindSupport Hypnosis & Counselling™️. All rights reserved.
             </div>
         </footer>
 

@@ -19,7 +19,7 @@ export default function Navbar() {
                         className="h-16 transition duration-300 group-hover:drop-shadow-[0_0_12px_rgba(198,168,107,0.9)]"
                     />
                     <span className="text-2xl font-bold text-white tracking-wide">
-                        Mindsupport Hypnosis
+                        MindSupport Hypnosis & Counselling™️
                     </span>
                 </Link>
 

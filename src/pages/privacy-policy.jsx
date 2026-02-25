@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
                             1. Introduction
                         </h2>
                         <p>
-                            MindSupport Hypnosis & Counselling (“we,” “our,” “us”) respects
+                            MindSupport Hypnosis & Counselling™️ (“we,” “our,” “us”) respects
                             your privacy and is committed to protecting your personal
                             information. This Privacy Policy explains how we collect,
                             use, store, and safeguard your information when you visit

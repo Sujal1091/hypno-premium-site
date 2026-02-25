@@ -20,7 +20,7 @@ export default function TermsOfService() {
                         </h2>
                         <p>
                             By accessing this website or engaging in services provided by
-                            <strong className="text-gray-200"> MindSupport Hypnosis & Counselling</strong>,
+                            <strong className="text-gray-200"> MindSupport Hypnosis & Counselling™️</strong>,
                             you agree to be bound by these Terms of Service. If you do not
                             agree with any part of these Terms, you should not use this website
                             or our services.
